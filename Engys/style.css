@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    will-change: background-color;
+    background-color: #222;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+
+
+  }
+  
+  header .logo {
+    font-size: 32px;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-color 0.3s ease;
+ 
+
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: #e55b00;
+    }
+  }
+  
+  .hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+   
+
+    text-align: center;
+    padding: 150px 20px;
+    min-height: 500px;
+    overflow: hidden;
+
+  }
+  
+  .hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+  }
+  
+  .hero p {
+    font-size: 28px;
+    margin-bottom: 40px;
+
+  }
+  
+  .btn-cta {
+    background-color: #e55b00;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    will-change: transform;
+    transform: translateY(0);
+    
+
+  }
+  
+  .btn-cta:hover {
+    background-color: #e24600;
+  }
+  
+  section {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .about img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+
+
+
+  }
+  
+  .about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+
+  }
+  
+  .about p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    transition: color 0.3s ease;
+    color: #333;
+    color: #666;
+  }
+
+  
+  .features .features-container {
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease;
+
+  }
+  
+  .feature {
+
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+    position: relative;
+    overflow: hidden;
+    will-change: transform;
+    z-index: 1;
+  }
+  
+  .feature:hover {
+
+    transform: translateY(-10px);
+    }
+  
+  .products .products-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .gallery .gallery-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  .reviews .reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .review {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    color: #ff6600;
+  }
+
+  /* Responsive design */
+  @media screen and (max-width: 992px) {
+    header nav ul {
+      flex-direction: column;
+    }
+    
+    header nav ul li {
+      margin-bottom: 10px;
+    }
+    
+    header nav ul li a {
+      font-size: 14px;
+
+    }
+    
+    section {
+      padding: 60px 20px;
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.5;
+      letter-spacing: 1px;
+
+      
+    }
+    
+    footer p {
+      font-size: 12px;
+    }
+  }
+  
+  /* Dark mode */
+
+  
+  /* Animations */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Adding some crazy animations */
+  .hero-content h1 {
+    animation: bounce 2s infinite ease-in-out;
+    
+  }
+  
+  .product-card:hover {
+    animation: bounce 1.5s ease-in-out;
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  
+  .feature:hover {
+    animation: slideIn 0.5s forwards;
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0s, opacity 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 2;
+
+  }
+  
+  .gallery{
+
+    animation: slideIn 0.5s forwards;
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0s, opacity 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 2;
+
+
+  }
+
+  /* Adding some hover effects */
+  .about img:hover {
+    transform: scale(1.1);
+  }
+  
+  .btn-cta:hover {
+    background-color: #d94800;
+  }
+
+  /* Adding some transitions */
+  header, section, footer {
+    transition: background-color 0.3s ease;
+  }
+  
+  
